@@ -76,12 +76,12 @@ export default {
 .under-navbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 60vh;
     background-color: rgba(241,229,239,255);
     .text {
         width: 250px;
-        margin-left: 20px;
+        margin-left: 200px;
         h1 {
             color: rgba(85,50,139,255);
             width: 300px;
@@ -108,6 +108,8 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        margin-right: 20px;
+        margin-bottom: 250px;
     }
     .btn-r {
         font-size: 10px;
