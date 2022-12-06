@@ -18,8 +18,16 @@
                 <h4>Baking Special Moments</h4>
             </div>
             <div class="s-img">
-                <div class="foto"><img src="@/immagini/wedding-bg.jpg"></div>
-                <div class="foto-due"><img src="@/immagini/corporate-bg.jpg" alt=""></div>
+                <div class="foto">
+                    <h6>INTENATIONAL BAKERY</h6>
+                    <h2>Corporate Events</h2>
+                    <p>Explore more</p> 
+                </div>
+                <div class="foto-due">
+                    <h6>PRIVATE DINNING HOLE</h6>
+                    <h2> Weddings & Parties</h2>
+                    <p>Explore more</p> 
+                </div>
                 
             </div>
         </div>
@@ -161,12 +169,68 @@ export default {
             height: 100%;
         }
         .foto {
+            background-image: url('@/immagini/wedding-bg.jpg');
+            background-size: cover;
+            width: 45%;
             height:60vh ;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            color: transparent;
         }
+
         .foto-due {
-            height: 60vh;
+            background-image: url('@/immagini/corporate-bg.jpg');
+            background-size: cover;
+            width: 45%;
+            height:60vh ;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            color: transparent;
         }
     }
+}
+.foto:hover {
+    position: relative;
+    p {
+        font-size: 10px;
+        padding: 1.5em;
+        background-color:  rgba(85,50,139,255);
+        border-radius: 10px;
+        color: white;
+    }
+    h2 {
+        color: white;
+    }
+    h6 {
+        color: white;
+    }
+    
+}
+
+.foto-due:hover {
+    position: relative;
+    p {
+        font-size: 10px;
+        padding: 1.5em;
+        background-color:  rgba(85,50,139,255);
+        border-radius: 10px;
+        color: white;
+    }
+    h2 {
+        color: white;
+    }
+    h6 {
+        color: white;
+    }
+    
 }
 
 //terzo blocco
