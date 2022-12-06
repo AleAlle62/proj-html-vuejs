@@ -78,7 +78,8 @@ export default {
     align-items: center;
     justify-content: space-between;
     height: 60vh;
-    background-color: rgba(241,229,239,255);
+    background-image: url('@/immagini/hero-header-bakery.jpg');
+    background-size: cover;
     .text {
         width: 250px;
         margin-left: 200px;
