@@ -89,6 +89,44 @@
             <p>LOCATIONS</p>
             <h3>Visit our Bakeries</h3>
             <div>img</div>
+            <div class="sette-grande">
+                <!-- box sinsitra -->
+                <div class="sette-l">
+                    <div class="l-img"></div>
+                    <div class="l-text">
+                        <div><h3>New York</h3></div>
+                        <div class="l-text-under">
+                            <div>
+                                <p>CALL US</p>
+                                <p><b>1.800.458.566</b></p>
+                            </div>
+                            <div>
+                                <p>OPEN ALL WEEK</p>
+                                <p><b>9.00AM - 6.00 PM</b></p>
+                            </div>
+                                <p class="btn-map">View Map</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- box destra -->
+                <div class="sette-l-r">
+                    <div class="l-img"></div>
+                    <div class="l-text">
+                        <div><h3>London</h3></div>
+                        <div class="l-text-under">
+                            <div>
+                                <p>CALL US</p>
+                                <p><b>1.800.458.566</b></p>
+                            </div>
+                            <div>
+                                <p>OPEN ALL WEEK</p>
+                                <p><b>9.00AM - 6.00 PM</b></p>
+                            </div>
+                                <p class="btn-map">View Map</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -461,6 +499,85 @@ div {
     h3 {
         color: rgba(85,50,139,255);
     }
+
+    // blocco img 
+    .sette-grande {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80vh;
+        background-color: blue;
+        width: 100%;
+        .sette-l {
+            width: 50%;
+            background-color: rgba(241,249,251,255);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .l-img {
+                background-image: url('@/immagini/new-york-bk-1200x794.jpg');
+                color: white;
+                background-size: cover;
+                height: 70%;
+            }
+            .l-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .l-text-under {
+                    text-align: center;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    .btn-map {
+                        padding: 1em;
+                        background-color: white;
+                        color: rgba(112,83,158,255);
+                        
+                    }
+                }
+            }
+        }
+        .sette-l-r {
+            width: 50%;
+            background-color: rgba(250,243,227,255);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .l-img {
+                background-image: url('@/immagini/london-bk-1200x794.jpg');
+                color: white;
+                background-size: cover;
+                height: 70%;
+            }
+            .l-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .l-text-under {
+                    text-align: center;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    .btn-map {
+                        padding: 1em;
+                        background-color: white;
+                        color: rgba(112,83,158,255);
+                        
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 </style>
