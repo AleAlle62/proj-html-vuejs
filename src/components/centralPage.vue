@@ -1,6 +1,7 @@
 <template>
-    <div class="reset">
-        <!-- primo blocco -->
+    <div >
+        <div class="reset">
+            <!-- primo blocco -->
         <div class="con-slider-uno">
             <div class="slider-left">
                 <p>OUR PRODUCTS</p>
@@ -8,7 +9,7 @@
                 <p class="btn-shop">Start Shopping</p>
             </div>
             <div>
-                <h1>ciao</h1>
+                <h1>SLIDER</h1>
             </div>
         </div>
         <!-- secondo blocco -->
@@ -128,6 +129,36 @@
                 </div>
             </div>
         </div>
+        <!-- ottavo blocco -->
+        <div class="ottavo">
+            <div class="otto-up">
+                <div class="in-up-r"></div>
+                <div class="in-up-img">
+                    <div><p>MADE FOR SHARING</p></div>
+                    <div><h3>Let's stay in touch</h3></div>
+                    <div class="btn-social"><font-awesome-icon icon="fa-brands fa-instagram" />follow us</div>
+                </div>
+                <div class="in-up-l"></div>
+            </div>
+            <div class="otto-down">
+                <div class="in-un-img-1"></div>
+                <div class="in-un-img-2"></div>
+                <div class="in-un-img-3"></div>
+                <div class="in-un-img-4"></div>
+            </div>
+        </div>
+        </div>
+        <!-- fine reset  -->
+        <!-- ultimo blocco -->
+        <div class="last">
+            <div class="text">
+                <p>TRY OUR SEASONAL PRODUCTS</p>
+                <h3>Order for pick-up or delivery to your home</h3>
+                <div class="last-btn"> Shop Now</div>
+            </div>
+        </div>
+        
+
     </div>
 </template>
 
@@ -147,6 +178,9 @@ export default {
     justify-content: space-around;
     align-items: center;
     gap: 50px;
+    h1 {
+        color: black;
+    }
     .slider-left {
         width: 350px;
         display: flex;
@@ -575,6 +609,122 @@ div {
                     }
                 }
             }
+        }
+    }
+}
+
+//ottavo blocco
+
+.ottavo {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    .otto-up {
+        display: flex;
+        justify-content: space-between;
+        height: 47%;
+        width: 100%;
+        .in-up-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: rgba(241,237,244,255);
+            height: 100%;
+            width: 55%;
+            p {
+            color: rgba(152,149,172,255);
+            font-size: 10px;
+            }
+            .btn-social {
+                padding: 1.5em;
+                text-align: center;
+                width: 100px;
+                background-color: rgba(85,50,139,255);
+                border-radius: 10px;
+                font-size: 10px;
+            }
+            h3 {
+                color: rgba(85,50,139,255);
+            }
+        }
+        .in-up-r {
+            background-image: url('@/immagini/social-1.jpg');
+            background-size: cover;
+            height: 100%;
+            width: 20%;
+        }
+        .in-up-l {
+            background-image: url('@/immagini/social-2.jpg');
+            background-size: cover;
+            height: 100%;
+            width: 20%;
+        }
+    }
+    .otto-down {
+        display: flex;
+        justify-content: space-between;
+        height: 47%;
+        width: 100%;
+        .in-un-img-1 {
+            background-image: url('@/immagini/social-3.jpg');
+            background-size: cover;
+            height: 100%;
+            width: 23%;
+        }
+        .in-un-img-2 {
+            background-image: url('@/immagini/social-4.jpg');
+            background-size: cover;
+            height: 100%;
+            width: 23%;
+        } .in-un-img-3 {
+            background-image: url('@/immagini/social-5.jpg');
+            background-size: cover;
+            height: 100%;
+            width: 23%;
+        } .in-un-img-4 {
+            background-image: url('@/immagini/social-6.jpg');
+            background-size: cover;
+            height: 100%;
+            width: 23%;
+        }
+    }
+}
+// ultimo blocco 
+.last {
+    margin-top: 100px;
+    width: 100%;
+    height: 40vh;
+    background-image: url('@/immagini/call-to-action-bg.jpg');
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    .text {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 60%;
+        p {
+            color: rgba(90,108,133,255);
+            font-size: 10px;
+        }
+        h3 {
+            width: 50%;
+        }
+        .last-btn {
+            padding: 0.5em;
+            width: 130px;
+            color: rgba(85,50,139,255);
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
         }
     }
 }
