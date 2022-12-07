@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- sezioni  -->
-    <headerPage/>
+    <headerPage :arr-menu="arrMenu"/>
     <centralPage/>
-    <footerPage/>
+    <footerPage :arr-menu="arrMenu"/>
   </div>
 </template>
 
@@ -20,6 +20,12 @@ export default {
     centralPage,
     footerPage,
   },
+  data(){
+    return {
+      arrMenu: ['HOME', 'SHOP', 'ABOUT', 'GALLERY', 'LOCATION', 'JURNAL', 'CONTACT', 'MY ACCOUNT']
+    }
+  }
+  
 };
 </script>
 

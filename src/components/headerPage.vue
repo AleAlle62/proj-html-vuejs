@@ -37,11 +37,9 @@
 <script>
 export default {
     name: 'headerPage',
-    data() {
-        return {
-            arrMenu: ['HOME', 'SHOP', 'ABOUT', 'GALLERY', 'LOCATION', 'JURNAL', 'CONTACT', 'MY ACCOUNT']
-        }
-    },
+    props: {
+        arrMenu: Array,
+    }
 }
 </script>
 
