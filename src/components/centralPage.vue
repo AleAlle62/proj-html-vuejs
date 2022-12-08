@@ -30,40 +30,28 @@
                     <div class="slider-container">
                         <div class="slider">
                             <div class="slides">
-                            <div id="slides__1" class="slide">
-                                <span class="slide__text">
-                                    <img src="@/immagini/agency_thumbnail-400x300.jpg" alt="">
-                                    <img src="@/immagini/agency_thumbnail-400x300.jpg" alt="">
-                                </span>
-
-                                <a class="slide__prev" href="#slides__4" title="Next"></a>
-                                <a class="slide__next" href="#slides__2" title="Next"></a>
-                            </div>
-                            <div id="slides__2" class="slide">
-                                <span class="slide__text"><img src="@/immagini/bakery_demo.jpg" alt=""></span>
-                                <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                                <a class="slide__next" href="#slides__3" title="Next"></a>
-                            </div>
-                            <div id="slides__3" class="slide">
-                                <span class="slide__text">3</span>
-                                <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                                <a class="slide__next" href="#slides__4" title="Next"></a>
-                            </div>
-                            <div id="slides__4" class="slide">
-                                <span class="slide__text">4</span>
-                                <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                                <a class="slide__next" href="#slides__1" title="Prev"></a>
-                            </div>
-                            </div>
-                            <div class="slider__nav">
-                            <a class="slider__navlink" href="#slides__1"></a>
-                            <a class="slider__navlink" href="#slides__2"></a>
-                            <a class="slider__navlink" href="#slides__3"></a>
-                            <a class="slider__navlink" href="#slides__4"></a>
+                                <div id="slides__1" class="slide">
+                                    <span class="slide__text">
+                                        <div class="img-slider-1"></div>
+                                        <div class="img-slider-2"></div>
+                                        <a class="slide__prev" href="#slides__2" title="Next"></a>
+                                        <a class="slide__next" href="#slides__2" title="Next"></a>
+                                    </span>
+                                </div>
+                                <div id="slides__2" class="slide">
+                                    <span class="slide__text">
+                                        <div class="img-slider-3"></div>
+                                        <div class="img-slider-4"></div>
+                                        <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                                        <a class="slide__next" href="#slides__1" title="Next"></a>
+                                    </span>
+                                </div>                   
                             </div>
                         </div>
                     </div>
-                </div>
+
+                    <!-- fine seconda opzione  -->
+
                 </div>
             </div>
 
@@ -216,7 +204,7 @@
                 </div>
             </div>
         </div>
-    <!-- </div> -->
+    </div>
 </template>
 
 <script>
@@ -242,123 +230,124 @@ export default {
 
 
 .slider-container {
-  background: linear-gradient(
-    149deg,
-    rgb(247, 0, 255) 0%,
-    rgb(255, 145, 0) 100%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 500px;
-  img {
-    height: 100px;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 700px;
 }
 
 .slider {
-  width: 100%;
-  max-width: 600px;
-  height: 400px;
-  margin: 20px;
-  text-align: center;
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .slides {
-  display: flex;
-  overflow-x: scroll;
-  position: relative;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
-.slide:nth-of-type(even) {
-  background-color: rgb(250, 246, 212);
-}
+
 
 .slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: 100%;
-  height: 400px;
-  scroll-snap-align: center;
-  margin-right: 0px;
-  box-sizing: border-box;
-  background: white;
-  transform-origin: center center;
-  transform: scale(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: white;
+    transform-origin: center center;
+    transform: scale(1);
 }
 
 .slide__text {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: sans-serif;
+    display: flex;
+    gap: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+    .img-slider-1 {
+        height: 400px;
+        width: 300px;
+        background-image: url('@/immagini/strawberry-jam-cookies-1200x1530.jpg');
+        background-size: cover;
+    }
+    .img-slider-2 {
+        height: 400px;
+        width: 300px;
+        background-image: url('@/immagini/cookies-with-ice-cream-1200x1530.jpg');
+        background-size: cover;
+    }
+    .img-slider-3 {
+        height: 400px;
+        width: 300px;
+        background-image: url('@/immagini/glazed-pancake-with-lemon-1200x1530.jpg');
+        background-size: cover;
+    }
+    .img-slider-4 {
+        height: 400px;
+        width: 300px;
+        background-image: url('@/immagini/cherry-cake-1200x1530.jpg');
+        background-size: cover;
+    }
 }
 
-.slide a {
-  background: none;
-  border: none;
-}
 
-a.slide__prev,
+
+a.slide__prev, 
 .slider::before {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  left: 5%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
 }
 
 a.slide__next,
 .slider::after {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  right: 5%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
 }
 
 .slider::before,
 .slider::after,
 .slide__prev,
 .slide__next {
-  position: absolute;
-  top: 48%;
-  width: 35px;
-  height: 35px;
-  border: solid black;
-  border-width: 0 4px 4px 0;
-  padding: 3px;
-  box-sizing: border-box;
+    position: absolute;
+    top: 48%;
+    width: 20px;
+    height: 20px;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
 }
 
 .slider::before,
 .slider::after {
-  content: "";
-  z-index: 1;
-  background: none;
-  pointer-events: none;
+    content: "";
+    z-index: 1;
+    background: none;
+    pointer-events: none;
 }
 
 .slider__nav {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
-  text-align: center;
-}
-
-.slider__navlink {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: black;
-  margin: 0 10px 0 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
 }
 
 
@@ -366,69 +355,45 @@ a.slide__next,
 
 
 
+// SECONDA OPZIONE
 
 
-.read-article{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 999;
-  color: #000;
-  background: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-family: arial;
-  text-decoration: none;
-  box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
-}
-.read-article:hover{
-    background: #d5d5d5;
-    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
-}
-iframe[sandbox] .read-article{
-  display: none;
+header {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-bottom: 100px;
 }
 
+.row {
+    display: flex;
+    overflow: hidden;    
+}
 
+.imagegroup {
+    display: flex;
+    height: 400px;
+}
 
+.imagegroup img{
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 3px solid white;
+}
 
+.imagegroup {
+    animation: travel 10s ease-in-out infinite;
+}
 
-// header {
-//     max-width: 1024px;
-//     width: 100%;
-//     margin-left: auto;
-//     margin-right: auto;
-//     overflow: hidden;
-// }
-
-// .row {
-//     display: flex;
-//     overflow: hidden;    
-// }
-
-// .imagegroup {
-//     display: flex;
-//     height: 200px;
-// }
-
-// .imagegroup img{
-//     flex-shrink: 0;
-//     object-fit: cover;
-//     border: 3px solid white;
-// }
-
-// .imagegroup {
-//     animation: travel 20s ease-in-out infinite;
-// }
-
-// @keyframes travel {
-//     0%, 100% {
-//         transform: translate3d(0,0,0);
-//     }
-//     50% {
-//         transform: translate3d(-100%,0,0);
-//     }
-// }
+@keyframes travel {
+    0%, 100% {
+        transform: translate3d(0,0,0);
+    }
+    50% {
+        transform: translate3d(-50%,0,0);
+    }
+}
 
 
 
