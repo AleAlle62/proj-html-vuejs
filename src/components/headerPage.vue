@@ -46,7 +46,7 @@ export default {
 <style lang="scss" scoped>
 .navbar {
     height: 10vh;
-    background-color: rgba(241,229,239,255);
+    background-color: rgba(240,233,241,255);
     color: black;
     display: flex;
     justify-content: space-around;
@@ -79,11 +79,11 @@ export default {
     background-image: url('@/immagini/hero-header-bakery.jpg');
     background-size: cover;
     .text {
-        width: 250px;
+        width: 300px;
         margin-left: 200px;
         h1 {
             color: rgba(85,50,139,255);
-            width: 300px;
+            width: 350px;
         }
         p {
             color: rgba(137,131,144,255);

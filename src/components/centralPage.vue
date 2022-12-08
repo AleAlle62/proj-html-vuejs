@@ -1,174 +1,454 @@
 <template>
-    <div >
+    <div>
         <div class="reset">
             <!-- primo blocco -->
-        <div class="con-slider-uno">
-            <div class="slider-left">
-                <p>OUR PRODUCTS</p>
-                <h4>All our delectable pastries are backed fresh in our Kitchen very mornig, and are made with all natural, all organics ingredients.</h4>
-                <p class="btn-shop">Start Shopping</p>
-            </div>
-            <div>
-                <h1>SLIDER</h1>
-            </div>
-        </div>
-        <!-- secondo blocco -->
-        <div class="special">
-            <div class="s-top">
-                <p>CORPORATE & WEDDINGS</p>
-                <h4>Baking Special Moments</h4>
-            </div>
-            <div class="s-img">
-                <div class="foto">
-                    <h6>INTENATIONAL BAKERY</h6>
-                    <h2>Corporate Events</h2>
-                    <p>Explore more</p> 
+            <div class="con-slider-uno">
+                <div class="slider-left">
+                    <p>OUR PRODUCTS</p>
+                    <h4>All our delectable pastries are backed fresh in our Kitchen very mornig, and are made with all natural, all organics ingredients.</h4>
+                    <p class="btn-shop">Start Shopping</p>
                 </div>
-                <div class="foto-due">
-                    <h6>PRIVATE DINNING HOLE</h6>
-                    <h2> Weddings & Parties</h2>
-                    <p>Explore more</p> 
+
+
+                <!-- SLIDER -->
+
+                <div>
+
+                    <header>
+                        <div class="row large">
+                            <div class="imagegroup" style="border:2px solid white">
+                            <img src="@/immagini/choco-chip-cookies-1200x1530.jpg" alt="">
+                            <img src="@/immagini/strawberry-jam-cookies-1200x1530.jpg" alt="">
+                            <img src="@/immagini/strawberry-donut-1200x1530.jpg" alt="">
+                            <img src="@/immagini/cherry-cake-1200x1530.jpg" alt="">
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- ALTRA SOLUZIONE, statica uno alla volta --> 
+
+                    <!-- <div class="slider-container">
+                        <div class="slider">
+                            <div class="slides">
+                            <div id="slides__1" class="slide">
+                                <span class="slide__text"><img src="@/immagini/agency_thumbnail-400x300.jpg" alt=""></span>
+                                <a class="slide__prev" href="#slides__4" title="Next"></a>
+                                <a class="slide__next" href="#slides__2" title="Next"></a>
+                            </div>
+                            <div id="slides__2" class="slide">
+                                <span class="slide__text"><img src="@/immagini/bakery_demo.jpg" alt=""></span>
+                                <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                                <a class="slide__next" href="#slides__3" title="Next"></a>
+                            </div>
+                            <div id="slides__3" class="slide">
+                                <span class="slide__text">3</span>
+                                <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                                <a class="slide__next" href="#slides__4" title="Next"></a>
+                            </div>
+                            <div id="slides__4" class="slide">
+                                <span class="slide__text">4</span>
+                                <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                                <a class="slide__next" href="#slides__1" title="Prev"></a>
+                            </div>
+                            </div>
+                            <div class="slider__nav">
+                            <a class="slider__navlink" href="#slides__1"></a>
+                            <a class="slider__navlink" href="#slides__2"></a>
+                            <a class="slider__navlink" href="#slides__3"></a>
+                            <a class="slider__navlink" href="#slides__4"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
                 </div>
-                
             </div>
-        </div>
-        <!-- terzo blocco -->
-        <div class="secondo-slider">
-            <div class="secondo-l">
-                <h3>Find a freshly baked product perfect for you</h3>
-                <p>integer a nibh ex porttito retrum et ut velit. Etiam felis at leo feugiat placerat. Sed ac nulla id orci temport conovallis sed.</p>
-                <p class="btn-s-l">Shop All Products</p>
+
+
+
+
+
+            <!-- secondo blocco -->
+            <div class="special">
+                <div class="s-top">
+                    <p>CORPORATE & WEDDINGS</p>
+                    <h4>Baking Special Moments</h4>
+                </div>
+                <div class="s-img">
+                    <div class="foto">
+                        <h6>INTENATIONAL BAKERY</h6>
+                        <h2>Corporate Events</h2>
+                        <p>Explore more</p> 
+                    </div>
+                    <div class="foto-due">
+                        <h6>PRIVATE DINNING HOLE</h6>
+                        <h2> Weddings & Parties</h2>
+                        <p>Explore more</p> 
+                    </div>
+                    
+                </div>
             </div>
-            <div class="slider-slider">
-                <h1>SLIDER</h1>
+            <!-- terzo blocco -->
+            <div class="secondo-slider">
+                <div class="secondo-l">
+                    <h3>Find a freshly baked product perfect for you</h3>
+                    <p>integer a nibh ex porttito retrum et ut velit. Etiam felis at leo feugiat placerat. Sed ac nulla id orci temport conovallis sed.</p>
+                    <p class="btn-s-l">Shop All Products</p>
+                </div>
+                <div class="slider-slider">
+                    <h1>SLIDER</h1>
+                </div>
             </div>
-        </div>
-        <!-- quarto blocco  -->
-        <div class="tell">
-            <div class="h1">
-                <h1>Tell us what you have in mind</h1>
+            <!-- quarto blocco  -->
+            <div class="tell">
+                <div class="h1">
+                    <h1>Tell us what you have in mind</h1>
+                </div>
+                    <div class="tell-r">
+                        <div class="zero">01</div>
+                        <div>
+                            <p>MANUAL INGREDIENTS SELECTION</p>
+                            <h6>Cras consequat lectus vestibulum tortom pulvinar, quis eusimod nils varius. Ut eu leoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectutetor ulteicesies ac congue. Donec lorem erat, finibus in velit placeat, return augue.</h6>
+                        </div>
+                    </div>
             </div>
-                <div class="tell-r">
-                    <div class="zero">01</div>
-                    <div>
-                        <p>MANUAL INGREDIENTS SELECTION</p>
+            <!-- quinto blocco -->
+            <div class="grande-cinque">
+                <div class="cinque-l">
+                    <div class="l-inside">
+                        <h1>We Start Baking</h1>
+                        <p>02</p>
+                    </div>
+                    <div class="l-inside-due">
+                        <p>SWEET & DELICIUS</p>
                         <h6>Cras consequat lectus vestibulum tortom pulvinar, quis eusimod nils varius. Ut eu leoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectutetor ulteicesies ac congue. Donec lorem erat, finibus in velit placeat, return augue.</h6>
                     </div>
                 </div>
-        </div>
-        <!-- quinto blocco -->
-        <div class="grande-cinque">
-            <div class="cinque-l">
-                <div class="l-inside">
-                    <h1>We Start Baking</h1>
-                    <p>02</p>
+                <div class="cinque-r">
+                    <p>DONT JUST  TAKE OUR WORD FOR IT</p>
+                    <h3>"Finally found an alternative to the mass produced products. Sometigh that incorporates real organic ingredientrs, nutrient dense wellness while promothing sustainibility and activity."</h3>
+                    <p>Rachel Cooper, Founder</p>
                 </div>
-                <div class="l-inside-due">
-                    <p>SWEET & DELICIUS</p>
+            </div>
+            <!-- sesto blocco -->
+            <div class="delivero">
+                <div class="del-up">
+                    <h1>Delivered to your home</h1>
+                    <p>03</p>
+                </div>
+                <div class="del-down">
+                    <p>BAKED TO ORDER & GIT WRAPPED</p>
                     <h6>Cras consequat lectus vestibulum tortom pulvinar, quis eusimod nils varius. Ut eu leoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectutetor ulteicesies ac congue. Donec lorem erat, finibus in velit placeat, return augue.</h6>
                 </div>
             </div>
-            <div class="cinque-r">
-                <p>DONT JUST  TAKE OUR WORD FOR IT</p>
-                <h3>"Finally found an alternative to the mass produced products. Sometigh that incorporates real organic ingredientrs, nutrient dense wellness while promothing sustainibility and activity."</h3>
-                <p>Rachel Cooper, Founder</p>
-            </div>
-        </div>
-        <!-- sesto blocco -->
-        <div class="delivero">
-            <div class="del-up">
-                <h1>Delivered to your home</h1>
-                <p>03</p>
-            </div>
-            <div class="del-down">
-                <p>BAKED TO ORDER & GIT WRAPPED</p>
-                <h6>Cras consequat lectus vestibulum tortom pulvinar, quis eusimod nils varius. Ut eu leoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectutetor ulteicesies ac congue. Donec lorem erat, finibus in velit placeat, return augue.</h6>
-            </div>
-        </div>
-        <!-- settimo blocco -->
-        <div class="sette-con">
-            <p>LOCATIONS</p>
-            <h3>Visit our Bakeries</h3>
-            <div>img</div>
-            <div class="sette-grande">
-                <!-- box sinsitra -->
-                <div class="sette-l">
-                    <div class="l-img"></div>
-                    <div class="l-text">
-                        <div><h3>New York</h3></div>
-                        <div class="l-text-under">
-                            <div>
-                                <p>CALL US</p>
-                                <p><b>1.800.458.566</b></p>
+            <!-- settimo blocco -->
+            <div class="sette-con">
+                <p>LOCATIONS</p>
+                <h3>Visit our Bakeries</h3>
+                <div>img</div>
+                <div class="sette-grande">
+                    <!-- box sinsitra -->
+                    <div class="sette-l">
+                        <div class="l-img"></div>
+                        <div class="l-text">
+                            <div><h3>New York</h3></div>
+                            <div class="l-text-under">
+                                <div>
+                                    <p>CALL US</p>
+                                    <p><b>1.800.458.566</b></p>
+                                </div>
+                                <div>
+                                    <p>OPEN ALL WEEK</p>
+                                    <p><b>9.00AM - 6.00 PM</b></p>
+                                </div>
+                                    <p class="btn-map">View Map</p>
                             </div>
-                            <div>
-                                <p>OPEN ALL WEEK</p>
-                                <p><b>9.00AM - 6.00 PM</b></p>
-                            </div>
-                                <p class="btn-map">View Map</p>
                         </div>
                     </div>
-                </div>
-                <!-- box destra -->
-                <div class="sette-l-r">
-                    <div class="l-img"></div>
-                    <div class="l-text">
-                        <div><h3>London</h3></div>
-                        <div class="l-text-under">
-                            <div>
-                                <p>CALL US</p>
-                                <p><b>1.800.458.566</b></p>
+                    <!-- box destra -->
+                    <div class="sette-l-r">
+                        <div class="l-img"></div>
+                        <div class="l-text">
+                            <div><h3>London</h3></div>
+                            <div class="l-text-under">
+                                <div>
+                                    <p>CALL US</p>
+                                    <p><b>1.800.458.566</b></p>
+                                </div>
+                                <div>
+                                    <p>OPEN ALL WEEK</p>
+                                    <p><b>9.00AM - 6.00 PM</b></p>
+                                </div>
+                                    <p class="btn-map">View Map</p>
                             </div>
-                            <div>
-                                <p>OPEN ALL WEEK</p>
-                                <p><b>9.00AM - 6.00 PM</b></p>
-                            </div>
-                                <p class="btn-map">View Map</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- ottavo blocco -->
-        <div class="ottavo">
-            <div class="otto-up">
-                <div class="in-up-r"></div>
-                <div class="in-up-img">
-                    <div><p>MADE FOR SHARING</p></div>
-                    <div><h3>Let's stay in touch</h3></div>
-                    <div class="btn-social"><font-awesome-icon icon="fa-brands fa-instagram" />follow us</div>
+            <!-- ottavo blocco -->
+            <div class="ottavo">
+                <div class="otto-up">
+                    <div class="in-up-r"></div>
+                    <div class="in-up-img">
+                        <div><p>MADE FOR SHARING</p></div>
+                        <div><h3>Let's stay in touch</h3></div>
+                        <div class="btn-social"><font-awesome-icon icon="fa-brands fa-instagram" />follow us</div>
+                    </div>
+                    <div class="in-up-l"></div>
                 </div>
-                <div class="in-up-l"></div>
+                <div class="otto-down">
+                    <div class="in-un-img-1"></div>
+                    <div class="in-un-img-2"></div>
+                    <div class="in-un-img-3"></div>
+                    <div class="in-un-img-4"></div>
+                </div>
             </div>
-            <div class="otto-down">
-                <div class="in-un-img-1"></div>
-                <div class="in-un-img-2"></div>
-                <div class="in-un-img-3"></div>
-                <div class="in-un-img-4"></div>
-            </div>
-        </div>
-        </div>
-        <!-- fine reset  -->
-        <!-- ultimo blocco -->
-        <div class="last">
-            <div class="text">
-                <p>TRY OUR SEASONAL PRODUCTS</p>
-                <h3>Order for pick-up or delivery to your home</h3>
-                <div class="last-btn"> Shop Now</div>
+            <!-- fine reset  -->
+            <!-- ultimo blocco -->
+            <div class="last">
+                <div class="text">
+                    <p>TRY OUR SEASONAL PRODUCTS</p>
+                    <h3>Order for pick-up or delivery to your home</h3>
+                    <div class="last-btn"> Shop Now</div>
+                </div>
             </div>
         </div>
-        
-
     </div>
 </template>
 
 <script>
+
+
+
+
+
 export default {
     name: 'centralPage',
+    methods: {
+        
+    }
 }
+
 </script>
 
+
+
+
+
 <style lang="scss" scoped>
+
+
+// .slider-container {
+//   background: linear-gradient(
+//     149deg,
+//     rgb(247, 0, 255) 0%,
+//     rgb(255, 145, 0) 100%
+//   );
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100%;
+//   width: 500px;
+//   img {
+//     height: 100px;
+//   }
+// }
+
+// .slider {
+//   width: 100%;
+//   max-width: 600px;
+//   height: 400px;
+//   margin: 20px;
+//   text-align: center;
+//   border-radius: 20px;
+//   overflow: hidden;
+//   position: relative;
+// }
+
+// .slides {
+//   display: flex;
+//   overflow-x: scroll;
+//   position: relative;
+//   scroll-behavior: smooth;
+//   scroll-snap-type: x mandatory;
+// }
+
+// .slide:nth-of-type(even) {
+//   background-color: rgb(250, 246, 212);
+// }
+
+// .slide {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-shrink: 0;
+//   width: 100%;
+//   height: 400px;
+//   scroll-snap-align: center;
+//   margin-right: 0px;
+//   box-sizing: border-box;
+//   background: white;
+//   transform-origin: center center;
+//   transform: scale(1);
+// }
+
+// .slide__text {
+//   font-size: 40px;
+//   font-weight: bold;
+//   font-family: sans-serif;
+// }
+
+// .slide a {
+//   background: none;
+//   border: none;
+// }
+
+// a.slide__prev,
+// .slider::before {
+//   transform: rotate(135deg);
+//   -webkit-transform: rotate(135deg);
+//   left: 5%;
+// }
+
+// a.slide__next,
+// .slider::after {
+//   transform: rotate(-45deg);
+//   -webkit-transform: rotate(-45deg);
+//   right: 5%;
+// }
+
+// .slider::before,
+// .slider::after,
+// .slide__prev,
+// .slide__next {
+//   position: absolute;
+//   top: 48%;
+//   width: 35px;
+//   height: 35px;
+//   border: solid black;
+//   border-width: 0 4px 4px 0;
+//   padding: 3px;
+//   box-sizing: border-box;
+// }
+
+// .slider::before,
+// .slider::after {
+//   content: "";
+//   z-index: 1;
+//   background: none;
+//   pointer-events: none;
+// }
+
+// .slider__nav {
+//   box-sizing: border-box;
+//   position: absolute;
+//   bottom: 5%;
+//   left: 50%;
+//   width: 200px;
+//   margin-left: -100px;
+//   text-align: center;
+// }
+
+// .slider__navlink {
+//   display: inline-block;
+//   height: 15px;
+//   width: 15px;
+//   border-radius: 50%;
+//   background-color: black;
+//   margin: 0 10px 0 10px;
+// }
+
+
+
+
+
+
+
+
+// .read-article{
+//   position: absolute;
+//   top: 10px;
+//   left: 10px;
+//   z-index: 999;
+//   color: #000;
+//   background: white;
+//   padding: 10px 20px;
+//   border-radius: 10px;
+//   font-family: arial;
+//   text-decoration: none;
+//   box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
+// }
+// .read-article:hover{
+//     background: #d5d5d5;
+//     box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
+// }
+// iframe[sandbox] .read-article{
+//   display: none;
+// }
+
+
+
+
+
+header {
+    max-width: 1024px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    overflow: hidden;    
+}
+
+.imagegroup {
+    display: flex;
+    height: 200px;
+}
+
+.imagegroup img{
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.imagegroup {
+    animation: travel 20s ease-in-out infinite;
+}
+
+@keyframes travel {
+    0%, 100% {
+        transform: translate3d(0,0,0);
+    }
+    50% {
+        transform: translate3d(-100%,0,0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .reset {
     margin: 50px;
 }

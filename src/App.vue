@@ -22,7 +22,7 @@ export default {
   },
   data(){
     return {
-      arrMenu: ['HOME', 'SHOP', 'ABOUT', 'GALLERY', 'LOCATION', 'JURNAL', 'CONTACT', 'MY ACCOUNT']
+      arrMenu: ['HOME', 'SHOP', 'ABOUT', 'GALLERY', 'LOCATION', 'JURNAL', 'CONTACT', 'MY ACCOUNT'],
     }
   }
   
