@@ -14,7 +14,7 @@
             <h3>Subscribe to Newsletter</h3>
             <form class="form">
                 <input type="text" placeholder="enter email adress*">
-                <p>Subscribe</p>
+                <div>Subscribe</div>
             </form>
             <div class="social">
                 <font-awesome-icon icon="fa-brands fa-instagram" />
@@ -75,15 +75,20 @@ export default {
             display: flex;
             gap: 30px;
             align-items: center;
-            justify-content: center;
-            p {
+            div {
+                padding: 0.3em;
                 text-align: center;
-                padding: 0.5em;
                 width: 100px;
                 border-radius: 10px;
                 color: white;
                 background-color:  rgba(88,54,141,255);
             }
+        }
+        div:hover {
+            color: rgba(88,54,141,255) ;
+            background-color: white;
+            transition: 1.2s;
+            scale: 1.2;
         }
         h3 {
             color:  rgba(88,54,141,255);

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font">
     <!-- sezioni  -->
     <headerPage :arr-menu="arrMenu"/>
     <centralPage/>
@@ -31,12 +31,14 @@ export default {
 
 <style lang="scss">
 // font
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   border: 0;
   box-sizing: border-box;
+}
+
+.font {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 // bootstrap
 @import "~bootstrap/scss/bootstrap";

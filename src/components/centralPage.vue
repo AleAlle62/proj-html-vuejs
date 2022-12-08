@@ -56,9 +56,6 @@
             </div>
 
 
-
-
-
             <!-- secondo blocco -->
             <div class="special">
                 <div class="s-top">
@@ -86,9 +83,44 @@
                     <p>integer a nibh ex porttito retrum et ut velit. Etiam felis at leo feugiat placerat. Sed ac nulla id orci temport conovallis sed.</p>
                     <p class="btn-s-l">Shop All Products</p>
                 </div>
-                <div class="slider-slider">
-                    <h1>SLIDER</h1>
-                </div>
+                <!-- secondo slider  -->
+                    <!-- <header>
+                        <div class="row large">
+                            <div class="imagegroup" style="border:2px solid white">
+                            <img src="@/immagini/choco-chip-cookies-1200x1530.jpg" alt="">
+                            <img src="@/immagini/strawberry-jam-cookies-1200x1530.jpg" alt="">
+                            <img src="@/immagini/strawberry-donut-1200x1530.jpg" alt="">
+                            <img src="@/immagini/cherry-cake-1200x1530.jpg" alt="">
+                            </div>
+                        </div>
+                    </header> -->
+
+                    <header>
+                        <div class="row">
+                            <div class="imagegroup">
+                                <div class="img-sl-in-1">
+                                    <div class="h">Choco Chip Cookies</div>
+                                    <div class="p">$ 19.00 - $39.00</div>
+                                </div>
+                                <div class="img-sl-in-2">
+                                    <div class="h">Strawberry Jam Cookies</div> 
+                                    <div class="p">$24.00 - $62.00</div>
+                                </div>
+                                <div class="img-sl-in-3">
+                                    <div class="h">Strawberry Donuts</div> 
+                                    <div class="p">$24.00 - $42.00</div>
+                                </div>
+                                <div class="img-sl-in-4">
+                                    <div class="h">Perfects Macaron</div> 
+                                    <div class="p">$18.00 - $52.00</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </header>
+
+
+
             </div>
             <!-- quarto blocco  -->
             <div class="tell">
@@ -368,12 +400,95 @@ header {
 
 .row {
     display: flex;
-    overflow: hidden;    
+    width: 1500px;
+    height: 450px;   
+    overflow: hidden;
 }
 
 .imagegroup {
     display: flex;
-    height: 400px;
+    gap: 0px;
+    width: 100%;
+    .img-sl-in-1 {
+        height: 450px;
+        width: 350px;
+        background-size: cover;
+        background-image: url('@/immagini/choco-chip-cookies-1200x1530.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .p {
+            font-size: 20px;
+        }
+        .h {
+            background-color: salmon;
+            padding: 0.5em;
+            color: rgba(85,50,139,255);
+            font-size: 30px;
+        }
+    }
+    .img-sl-in-2 {
+        height: 450px;
+        width: 350px;
+        background-size: cover;
+        background-image: url('@/immagini/cherry-cake-1200x1530.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .p {
+            font-size: 20px;
+        }
+        .h {
+            background-color: salmon;
+            padding: 0.5em;
+            color: rgba(85,50,139,255);
+            font-size: 30px;
+        }
+    }
+    .img-sl-in-3 {
+        height: 450px;
+        width: 350px;
+        background-size: cover;
+        background-image: url('@/immagini/strawberry-jam-cookies-1200x1530.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .p {
+            font-size: 20px;
+        }
+        .h {
+            background-color: salmon;
+            padding: 0.5em;
+            color: rgba(85,50,139,255);
+            font-size: 30px;
+        }
+    }
+    .img-sl-in-4 {
+        height: 450px;
+        width: 350px;
+        background-size: cover;
+        background-image: url('@/immagini/strawberry-donut-1200x1530.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .p {
+            font-size: 20px;
+        }
+        .h {
+            background-color: salmon;
+            padding: 0.5em;
+            color: rgba(85,50,139,255);
+            font-size: 30px;
+        }
+    }
 }
 
 .imagegroup img{
@@ -396,33 +511,17 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// fine seconda opzione 
 
 
 
 
 .reset {
     margin: 50px;
+    
 }
 .con-slider-uno {
-    margin-top: 100px;
+    margin-top: -100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -564,7 +663,6 @@ header {
         color: black;
     }
     .secondo-l {
-        text-align: center;
         width: 300px;
         display: flex;
         flex-direction: column;
@@ -900,6 +998,11 @@ div {
             h3 {
                 color: rgba(85,50,139,255);
             }
+            .btn-social:hover {
+                color: rgba(85,50,139,255);
+                background-color: white;
+                transition: 1.2s;
+            }
         }
         .in-up-r {
             background-image: url('@/immagini/social-1.jpg');
@@ -913,6 +1016,7 @@ div {
             height: 100%;
             width: 20%;
         }
+        
     }
     .otto-down {
         display: flex;
@@ -975,6 +1079,11 @@ div {
             text-align: center;
             font-size: 15px;
         }
+    }
+    .last-btn:hover {
+        color: white;
+        background-color: #bda2f3;
+        transition: 1.2s;
     }
 }
 
