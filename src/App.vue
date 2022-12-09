@@ -37,9 +37,6 @@ body {
   box-sizing: border-box;
 }
 
-.font {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 // bootstrap
 @import "~bootstrap/scss/bootstrap";
 

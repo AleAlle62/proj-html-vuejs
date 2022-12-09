@@ -82,6 +82,7 @@ export default {
         width: 300px;
         margin-left: 200px;
         h1 {
+            font-family: 'Unna', serif;
             color: rgba(85,50,139,255);
             width: 350px;
         }
@@ -130,4 +131,7 @@ export default {
         box-shadow: 7px 7px rgba(85,50,139,255);
     }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Unna:wght@700&display=swap')
+
 </style>

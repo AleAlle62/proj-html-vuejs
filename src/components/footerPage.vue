@@ -38,6 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
+    font-family: 'Unna', serif;
     img {
         height: 80px;
     }
@@ -104,5 +105,9 @@ export default {
 .list:hover {
         border-bottom: 2px solid  rgba(88,54,141,255);
     }
+
+    
+// font 
+@import url('https://fonts.googleapis.com/css2?family=Unna:wght@700&display=swap')
 
 </style>

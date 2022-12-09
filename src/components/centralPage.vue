@@ -423,6 +423,7 @@ header {
             font-size: 20px;
         }
         .h {
+            font-family: 'Unna', serif;
             background-color: salmon;
             padding: 0.5em;
             color: rgba(85,50,139,255);
@@ -443,6 +444,7 @@ header {
             font-size: 20px;
         }
         .h {
+            font-family: 'Unna', serif;
             background-color: salmon;
             padding: 0.5em;
             color: rgba(85,50,139,255);
@@ -463,6 +465,7 @@ header {
             font-size: 20px;
         }
         .h {
+            font-family: 'Unna', serif;
             background-color: salmon;
             padding: 0.5em;
             color: rgba(85,50,139,255);
@@ -483,6 +486,7 @@ header {
             font-size: 20px;
         }
         .h {
+            font-family: 'Unna', serif;
             background-color: salmon;
             padding: 0.5em;
             color: rgba(85,50,139,255);
@@ -536,6 +540,7 @@ header {
         align-items: flex-start;
         gap: 15px;
         h4 {
+            font-family: 'Unna', serif;
             color: rgba(85,50,139,255);
         }
         .btn-shop {
@@ -577,6 +582,7 @@ header {
             color: rgba(152,149,172,255);
         }
         h4 {
+            font-family: 'Unna', serif;
             color: rgba(85,50,139,255);
         }
     }
@@ -627,10 +633,15 @@ header {
         color: white;
     }
     h2 {
+        font-family: 'Unna', serif;
+        background-color: #bda2f3;
         color: white;
     }
     h6 {
+        font-family: 'Unna', serif;
+        background-color: #bda2f3;
         color: white;
+
     }
     
 }
@@ -645,9 +656,11 @@ header {
         color: white;
     }
     h2 {
+        font-family: 'Unna', serif;
         color: white;
     }
     h6 {
+        font-family: 'Unna', serif;
         color: white;
     }
     
@@ -655,9 +668,9 @@ header {
 
 //terzo blocco
 .secondo-slider {
+    margin-left: 100px;
     margin-top: 200px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     h1 {
         color: black;
@@ -674,6 +687,7 @@ header {
             font-size: 15px;
         }
         h3 {
+            font-family: 'Unna', serif;
             color: rgba(85,50,139,255);
         }
         .btn-s-l {
@@ -702,6 +716,7 @@ header {
     justify-content: space-between;
     gap: 20px;
     .h1 {
+        font-family: 'Unna', serif;
         color: white;
         width: 350px;
         margin: 50px;
@@ -768,6 +783,9 @@ div {
             p {
                 font-size: 45px;
             }
+            h1 {
+                font-family: 'Unna', serif;
+            }
         }
         .l-inside-due {
             margin: 40px;
@@ -798,6 +816,7 @@ div {
         }
         h3 {
             text-align: center;
+            font-family: 'Unna', serif;
             color: rgba(85,50,139,255);
         }
     }
@@ -828,6 +847,9 @@ div {
     color: white;
     background-image: url('@/immagini/bakery-process-3.jpg');
     background-size: cover;
+    h1 {
+        font-family: 'Unna', serif;
+    }
     .del-up {
         display: flex;
         justify-content: space-between;
@@ -878,6 +900,7 @@ div {
         color: rgba(152,149,172,255);
     }
     h3 {
+        font-family: 'Unna', serif;
         color: rgba(85,50,139,255);
     }
 
@@ -996,6 +1019,7 @@ div {
                 font-size: 10px;
             }
             h3 {
+                font-family: 'Unna', serif;
                 color: rgba(85,50,139,255);
             }
             .btn-social:hover {
@@ -1068,6 +1092,7 @@ div {
             font-size: 10px;
         }
         h3 {
+            font-family: 'Unna', serif;
             width: 50%;
         }
         .last-btn {
@@ -1087,5 +1112,7 @@ div {
     }
 }
 
+// font 
+@import url('https://fonts.googleapis.com/css2?family=Unna:wght@700&display=swap')
 
 </style>
